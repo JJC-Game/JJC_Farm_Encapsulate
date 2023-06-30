@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaceHarvestEffect_202503_08 : BaseHarvestEffect
+public class BaseHarvestEffect_202503_08 : BaseHarvestEffect
 {
 
 
