@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseHarvestEffect_202503_02 : MonoBehaviour
+public class BaseHarvestEffect_202503_02 : BaseHarvestEffect
 {
+    
     // Start is called before the first frame update
     void Start()
     {
