@@ -1,21 +1,43 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BaseHarvestEffect_202503_11 : BaseHarvestEffect
 {
-    public override void Initialize()
+    private float hane_timer;
+    private bool hane_isPlaying;
+    private GameObject hane_effectPrefab;
+    private GameObject hane_effectInstance;
+
+    override public void Initialize()
     {
-        base.Initialize();
+        hane_timer = 0.0f;
+        hane_isPlaying = false;
+        hane_effectPrefab = Resources.Load<GameObject>("Prefabs/HarvestEffect/202503_11/haniudaEffect");
+        hane_effectInstance = null;
     }
 
-    public override void Update()
+    override public void Update()
     {
-        base.Update();
+        if (hane_isPlaying)
+        {
+            hane_timer -= Time.deltaTime;
+            if (hane_timer < 0.0f)
+            {
+                GameObject.Destroy(hane_effectInstance);
+                hane_isPlaying = false;
+                hane_effectInstance = null;
+            }
+        }
     }
 
-    public override void PlayHarvest()
+    override public void PlayHarvest()
     {
-        base.PlayHarvest();
+        if (hane_effectInstance == null)
+        {
+            hane_effectInstance = GameObject.Instantiate(hane_effectPrefab);
+            hane_timer = 2.0f;
+            hane_isPlaying = true;
+        }
     }
 }
