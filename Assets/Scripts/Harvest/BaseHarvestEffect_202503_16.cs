@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class BaseHarvestEffect_202503_16 : BaseHarvestEffect
 {
-
-    void Start()
+    override public void Initialize()
     {
-        
+
+    }
+    override public void Update()
+    {
+
+    }
+    override public void PlayHarvest()
+    {
+
     }
 
-    void Update()
-    {
-        
-    }
 }
