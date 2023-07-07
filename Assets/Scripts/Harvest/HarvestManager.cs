@@ -77,6 +77,12 @@ public class HarvestManager : MonoBehaviour
 
     public void PlayHarvest()
     {
+        if (harbestId < 0 || harbestId >= effectList.Count)
+        {
+            // 入力した値が範囲外だったら、そのまま抜ける.
+            Debug.Assert(false);
+            return;
+        }
         effectList[harbestId].PlayHarvest();
     }
 }
