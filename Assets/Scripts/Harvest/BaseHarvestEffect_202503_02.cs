@@ -6,14 +6,19 @@ public class BaseHarvestEffect_202503_02 : BaseHarvestEffect
 {
     
     // Start is called before the first frame update
-    void Start()
+    public override void Initialize()
     {
         
     }
 
     // Update is called once per frame
-    void Update()
+    public override  void Update()
     {
         
+    }
+
+    public override void PlayHarvest()
+    {
+
     }
 }
