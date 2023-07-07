@@ -16,7 +16,7 @@ public class HarvestManager : MonoBehaviour
     BaseHarvestEffect_202503_09 effect9;
     BaseHarvestEffect_202503_11 effect11;
     BaseHarvestEffect_202503_12 effect12;
-    Effect202503_13 effect13;
+    BaseHarvestEffect_202503_13 effect13;
     BaseHarvestEffect_202503_14 effect14;
     BaseHarvestEffect_202503_15 effect15;
     BaseHarvestEffect_202503_16 effect16;
@@ -49,7 +49,7 @@ public class HarvestManager : MonoBehaviour
         effectList.Add(effect11);
         effect12 = new BaseHarvestEffect_202503_12();
         effectList.Add(effect12);
-        effect13 = new Effect202503_13();
+        effect13 = new BaseHarvestEffect_202503_13();
         effectList.Add(effect13);
         effect14 = new BaseHarvestEffect_202503_14();
         effectList.Add(effect14);
