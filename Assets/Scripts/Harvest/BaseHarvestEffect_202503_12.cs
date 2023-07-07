@@ -6,10 +6,6 @@ public class BaseHarvestEffect_202503_12 : BaseHarvestEffect
 {
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
     public override void Initialize()
     {
        // base.Initialize();
