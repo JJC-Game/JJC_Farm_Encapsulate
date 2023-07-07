@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5776524034267704171}
   - component: {fileID: 2703393486148750017}
   m_Layer: 0
-  m_Name: FarmEffect
+  m_Name: YamaguchiEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
