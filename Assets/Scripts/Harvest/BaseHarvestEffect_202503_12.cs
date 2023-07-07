@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BaseHarvestEffect_202503_12 : BaseHarvestEffect
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
+    // Start is called before the first frame update
+    public override void Initialize()
+    {
+       // base.Initialize();
+    }
     // Update is called once per frame
     public override void Update()
     {
@@ -17,6 +17,7 @@ public class BaseHarvestEffect_202503_12 : BaseHarvestEffect
     }
     public override void PlayHarvest()
     {
-       // base.PlayHarvest();
+        // base.PlayHarvest();
+
     }
 }

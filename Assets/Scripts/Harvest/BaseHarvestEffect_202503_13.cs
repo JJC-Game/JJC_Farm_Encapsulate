@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Effect202503_13 : BaseHarvestEffect
+public class BaseHarvestEffect_202503_13 : BaseHarvestEffect
 {
     // Start is called before the first frame update
-    void Start()
+    public override void Initialize()
     {
        
     }
