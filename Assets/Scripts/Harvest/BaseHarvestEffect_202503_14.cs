@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseHarvestEffect_202503_09 : BaseHarvestEffect
+public class BaseHarvestEffect_202503_14 : BaseHarvestEffect
 {
     override public void Initialize()
     {
-       
+
     }
 
     override public void Update()

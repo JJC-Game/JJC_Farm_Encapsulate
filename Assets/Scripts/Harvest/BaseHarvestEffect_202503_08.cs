@@ -6,7 +6,12 @@ public class BaseHarvestEffect_202503_08 : BaseHarvestEffect
 {
 
 
-    void Start()
+    public override void Initialize()
+    {
+        
+    }
+
+    public override void Update()
     {
         
     }
